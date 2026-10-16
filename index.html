@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es ">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Diseño Y Construcción De Robot Sumo</title>
+
+  </head>
+
+
+
+
+
+    <body style="background: #e6e6e6;">
+        <main>
+
+            <section id="home">
+                <section id="home_port">
+                    <h1>ROBOT SUMO FAT-MAN 456</h1>
+
+                    <h2>Categoria de 3kg</h2>
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <img src="img/logo_cecyteq.png" alt="Logo del cecyteq" width="40">
+                        <span>CECyTEQ 06</span>
+                    </div>
+                    <hr>
+                    <img src="" alt="" width="">
+                </section>
+
+
+                <section id="home_intr">
+                    <h2>Introducción al proyecto</h2>
+                    <p>
+                        El robot "Sumo Fat-Man 456" es un proyecto de robótica que integra habilidades en diseño CAD usando como herramienta principal el programa SolidWorks para el diseño de piezas desde cero, diseño de electronica usando Wokwi como herramienta para crear el diagrama de conexiones, programación que utiliza el framework de ESP-IDF para crear la logica que controla el robot, habilidades en administración las cuales fueron necesarias en la organización del equipo y en la documentación del proyecto, asi como a su vez se requirio de equipo que se encargara de la fabricación y ensamblaje de las piezas del robot.
+                    </p>
+
+                    <h2>Requisitos y restricciones de la competencia de robots sumo</h2>
+                    <ul>
+                        <li>Peso máximo de 3000g</li>
+                        <li>Dimenciones máximas de 20cm x 20cm sin límite de altura</li>
+                        <li>Robot totalmente autónomo sin intervención externa</li>
+                        <li>Uso obligatorio del módulo RRT para el arranque del robot</li>
+                        <li>Dohyo color negro de 154cm de diametro y un anillo color blanco de 5cm</li>
+                        <li>Esta prohíbido el uso de componentes que puedan dañar la pista</li>
+                        <li>No esta permitido jalar o enganchar al oponente</li>
+                        <li>Esta prohibido lanzar o catapultar cosas</li>
+                        <li>Cualquier elemento que adhiera al robot a la pista esta prohíbido</li>
+                    </ul>
+
+                </section>
+            </section>
+
+
+
+
+            <section id="diseño">
+
+            </section>
+
+
+
+
+            <section id="electronica">
+                
+                <section id="electronica_port-intr">
+                    <h1>Electrónica</h1>
+                </section>
+
+                <div>
+                    <h2>Componentes electrónicos usados</h2>
+                    <ul>
+                        <li>2x <a href="#">Motor 20kg*cm 500 rpm E-robots</a></li> <img src="img/motor_erobots.jpg" alt="" width="300">
+                        <li>2x <a href="#">Bts7960</a></li>    <img src="" width="300">
+                        <li><a href="#">Esp32 S3</a></li>    <img src="img/esp32s3.jpg" width="300">
+                        <li><a href="#">Módulo RRT</a></li>    <img src="img/rrt.jpg" width="300">
+                        <li>4x <a href="#">Qtr-1a</a></li>    <img src="img/qtr1a.jpg" width="300">
+                        <li>6x <a href="#">vl53l0x </a></li>    <img src="img/vl53l0x.jpg" width="300">
+                        <li><a href="#">Mpu6050</a></li>    <img src="" width="300">
+                        <li>2x <a href="#">As5600</a></li>    <img src="img/as5600.jpg" width="300">
+                        <li><a href="#">OVONIC 6S LiPo Batería 22.2V 5000mAh 120C</a></li> <img src="" width="300">
+                        <li><a href="#">kit espaciadores metálicos</a></li> <img src="" width="300">
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Conexiones</h2>
+
+                    <h3><a href="https://wokwi.com/projects/477785352420215809">Diagrama de conexiones hecho en Wokwi</a> & lista de conexión de pines de cada componente</h3>
+                    <img src="img/diagrama_wokwi.png" width="900">
+
+                    <h4>BTS7960 #1</h4>
+                    <ul>
+                        <li>VCC - 5V</li>
+                        <li>GND - GND</li>
+                        <li>RPWM - GPIO12</li>
+                        <li>LPWM - GPIO13</li>
+                        <li>R_EN - 5V</li>
+                        <li>L_EN - 5V</li>
+                        <li>B(+) - (+)22.2V</li>
+                        <li>B(-) - (-)22.2V</li>
+                        <li>M(+) - (+)Motor</li>
+                        <li>M(-) - (-)Motor</li>
+                    </ul>
+
+                    <h4>BTS7960 #2</h4>
+                    <ul>
+                        <li>VCC - 5V</li>
+                        <li>GND - GND</li>
+                        <li>RPWM - GPIO40</li>
+                        <li>LPWM - GPIO41</li>
+                        <li>R_EN - 5V</li>
+                        <li>L_EN - 5V</li>
+                        <li>B(+) - (+)22.2V</li>
+                        <li>B(-) - (-)22.2V</li>
+                        <li>M(+) - (+)Motor</li>
+                        <li>M(-) - (-)Motor</li>
+                    </ul>
+
+
+
+                </div>
+
+            </section>
+
+
+
+
+            <section id="programacion">
+            </section>
+
+
+        </main>
+
+        <footer>
+        </footer>
+
+
+    
+  </body>
+</html>
